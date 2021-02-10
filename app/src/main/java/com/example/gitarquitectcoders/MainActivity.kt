@@ -10,6 +10,12 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val binding = ActivityMainBinding.inflate(layoutInflater)
-        binding.arquitectText.text = "First issue on GitHub on a new branch"
+
+        with(binding) {
+            arquitectText.text = "First issue on GitHub on a new branch"
+            arquitectText.textSize = 22F
+        }
+
+
     }
 }
